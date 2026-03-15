@@ -10,16 +10,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: new ThemeData(primarySwatch: Colors.blue),
       home: new MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -31,9 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
-      ),
+      appBar: new AppBar(title: new Text(widget.title)),
       body: new Center(
         child: SingleChildScrollView(
           child: Html(
@@ -131,6 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     return Column(children: children);
                 }
               }
+              return null;
             },
           ),
         ),

@@ -10,6 +10,18 @@ Add the following to your `pubspec.yaml` file:
     dependencies:
       flutter_html: ^0.9.0
 
+## Flutter Toolchain (FVM)
+
+This repository is pinned to Flutter `3.41.4` via `.fvmrc`.
+
+Use FVM commands when working on the project:
+
+```bash
+fvm flutter pub get
+fvm flutter analyze
+fvm flutter test
+```
+
 ## Currently Supported HTML Tags:
 `a`, `abbr`, `acronym`, `address`, `article`, `aside`, `b`, `bdi`, `bdo`, `big`, `blockquote`, `body`, `br`, `caption`, `cite`, `code`, `data`, `dd`, `del`, `dfn`, `div`, `dl`, `dt`, `em`, `figcaption`, `figure`, `footer`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `header`, `hr`, `i`, `img`, `ins`, `kbd`, `li`, `main`, `mark`, `nav`, `noscript`, `ol`, `p`, `pre`, `q`, `rp`, `rt`, `ruby`, `s`, `samp`, `section`, `small`, `span`, `strike`, `strong`, `table`, `tbody`, `td`, `template`, `tfoot`, `th`, `thead`, `time`, `tr`, `tt`, `u`, `ul`, `var`
  

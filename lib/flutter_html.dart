@@ -5,8 +5,8 @@ import 'package:flutter_html/html_parser.dart';
 
 class Html extends StatelessWidget {
   Html({
-    Key key,
-    @required this.data,
+    super.key,
+    required this.data,
     this.padding,
     this.backgroundColor,
     this.defaultTextStyle,
@@ -15,20 +15,20 @@ class Html extends StatelessWidget {
     this.customRender,
     this.blockSpacing,
     this.useRichText = false,
-  }) : super(key: key);
+  });
 
   final String data;
-  final EdgeInsetsGeometry padding;
-  final Color backgroundColor;
-  final TextStyle defaultTextStyle;
-  final OnLinkTap onLinkTap;
+  final EdgeInsetsGeometry? padding;
+  final Color? backgroundColor;
+  final TextStyle? defaultTextStyle;
+  final OnLinkTap? onLinkTap;
   final bool renderNewlines;
-  final double blockSpacing;
+  final double? blockSpacing;
   final bool useRichText;
 
   /// Either return a custom widget for specific node types or return null to
   /// fallback to the default rendering.
-  final CustomRender customRender;
+  final CustomRender? customRender;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class Html extends StatelessWidget {
                 renderNewlines: renderNewlines,
                 customRender: customRender,
                 html: data,
-                blockSpacing: blockSpacing,
+                blockSpacing: blockSpacing ?? 14.0,
               ),
       ),
     );

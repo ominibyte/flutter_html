@@ -12,7 +12,6 @@ ios/Runner/GeneratedPluginRegistrant.*
 ### Flutter ###
 .flutter-plugins
 
-
 # End of https://www.gitignore.io/api/flutter,android-studio
 
 # Created by https://www.gitignore.io/api/androidstudio
@@ -148,5 +147,7 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-
 # End of https://www.gitignore.io/api/androidstudio
+
+# FVM Version Cache
+.fvm/
